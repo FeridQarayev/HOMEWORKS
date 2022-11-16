@@ -1,0 +1,63 @@
+body{
+    background-color: darkgrey;
+}
+
+.class1.class2{
+    background-color: coral;
+}
+
+.class3 #id1{
+    background-color: orange;
+}
+
+p.class4{
+    background-color: violet;
+}
+
+pre,span{
+    background-color: aqua;
+}
+
+.class6>.class5{
+    background-color:darkkhaki;
+}
+
+.class7+p{
+background-color: pink;
+}
+
+[title~=ok]{
+    background-color: darksalmon;
+}
+
+a[href$=".doma"]{
+    background-color: darkseagreen;
+}
+
+.class8:active{
+    background-color: gold;
+}
+
+.class9:checked{
+    width: 300px;
+}
+
+.class10:disabled{
+    width: 300px;
+}
+
+.class11:first-child{
+    background-color: tomato;
+}
+
+.class12:hover{
+    background-color: blue;
+}
+
+.class13:last-child{
+    background-color: purple;
+}
+
+.class14:visited{
+    color: khaki;
+}
