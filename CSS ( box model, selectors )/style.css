@@ -1,0 +1,25 @@
+body{
+    background-color:rgb(3, 0, 31);
+}
+
+.mydiv1{
+    border:50px solid red;
+    margin: 0px 460px;
+    border-radius: 100%;
+    padding: 50px;
+    background-color: darkgoldenrod;
+}
+
+.mydiv2{
+    border:50px solid yellow;
+    border-radius: 100%;
+    padding: 50px;
+    background-color: green;
+}
+
+.mydiv3{
+    border:50px solid blue;
+    border-radius: 100%;
+    padding: 50px;
+    background-color: rgb(103, 1, 147);
+}
