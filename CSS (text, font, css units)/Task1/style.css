@@ -1,0 +1,62 @@
+.header{
+    text-align: center;
+}
+
+.header .header__title{
+    font-size: 30px;
+    color: rgb(190, 0, 0);
+    font-style: bold;
+}
+
+.header .header__link{
+    margin: 0px 5px;
+}
+
+.body{
+    text-align: center;
+}
+.body__title{
+    color: blueviolet;
+    font-size: 25px;
+}
+.body .body__subtitle{
+    font-size: 20px;
+}
+.body__ul__title{
+    color:rgb(186, 133, 0);
+    font-size: 15px;
+    font-weight: bold;
+}
+.body .body__ul{
+    margin-top: 0px;
+    display: inline-block;
+}
+
+.main{
+    text-align: center;
+    margin: 0rem 40rem;
+}
+.main .main__card{
+    width: 15rem;
+    display: inline;
+}
+
+.main .main__card__img{
+    width: 15rem;
+    text-align: right;
+    display: block;
+}
+.main .main__card__num{
+    text-align: left;
+}
+.main__card__name{
+    display: inline;
+}
+.main .main__card__name__price{
+    font-weight: bold;
+    display: inline;
+}
+
+.info .body__title{
+    text-align: center;
+}
