@@ -1,0 +1,48 @@
+body{
+    background-color: aquamarine;
+}
+.card{
+    width: 300px;
+    height: 200px;
+    background-color: white;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    transition: all 0.8s;
+}
+.card__img{
+    width: 70%;
+    position: absolute;
+    bottom:50%;
+    left:50%;
+    transform: translate(-50%,10%); 
+    z-index: 999;
+    transition: all 0.8s;
+    border-radius: 10px;
+}
+.card__text{
+    width: 70%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-80%); 
+    transition: all 0.8s;
+}
+.card__text>h3{
+    color: darkcyan;
+}
+
+.card:hover{
+    height: 300px;
+    cursor: pointer;
+}
+.card:hover>.card__img{
+    bottom: 80%;
+}
+.card:hover .card__text{
+    transform: translate(-50%,-40%);
+}
