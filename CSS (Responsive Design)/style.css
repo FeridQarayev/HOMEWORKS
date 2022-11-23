@@ -245,9 +245,6 @@ html{
 
 
 @media only screen and (max-width: 640px) {
-    .cards {
-      background-color: orange;
-    }
     .contain a>span{
         opacity: 0;
     }
@@ -257,9 +254,6 @@ html{
     }
   }
 @media only screen and (max-width: 480px) {
-    .cards {
-      background-color: violet;
-    }
     .navbar__right a>svg{
         position: absolute;
         opacity: 0;
