@@ -7,16 +7,23 @@
 
 .navbar{
     height: 60px;
-    padding: 10px;
+    // padding: 10px;
     @extend %center-between;
-    background-color: violet;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
     .navbar__left{
         @extend %give-center;
         gap: 10px;
         margin-left: 10px;
         .navbar__left__icon{
-            width: 20px;
+            width:45px;
+            height: 45px;
+            padding: 10px;
+            fill: #5f6368;
+            &:hover{
+                background-color: rgba(60,64,67,.08);
+                border-radius: 50%;
+                cursor: pointer;
+            }
         }
         .navbar__left__icon__right{
             @extend %give-center;
@@ -27,6 +34,9 @@
                 font-size: 20px;
                 font-weight: 300;
             }
+            &:hover{
+                cursor: pointer;
+            }
         }
     }
     .navbar__right{
@@ -34,13 +44,26 @@
         gap: 15px;
         margin-right: 8px;
         .navbar__right__icon{
-            width: 20px;
+            width: 45px;
+            height: 45px;
+            padding: 10PX;
+            &:hover{
+                background-color: rgba(60,64,67,.08);
+                border-radius: 50%;
+                cursor: pointer;
+            }
         }
         img{
-            width: 40px;
-            height: 40px;
+            width: 50px;
+            height: 50px;
             border-radius: 50%;
             object-fit: cover;
+            padding: 5px;
+            &:hover{
+                background-color: rgba(60,64,67,.08);
+                border-radius: 50%;
+                cursor: pointer;
+            }
         }
     }
 }
@@ -72,27 +95,42 @@ body{
         }
         #btn-1{
             @include c.btncolor($color:#1967d2,$size:90);
+            &:hover{
+                background-color: rgba(66,133,244,.12);
+                cursor: pointer;
+            }
         }
         #btn-2{
             @include c.btncolor($color:#1967d2,$size:95);
+            &:hover{
+                background-color: rgba(66,133,244,.12);
+                cursor: pointer;
+            }
         }
         #btn-3{
             @include c.btncolor($color:#1967d2,$size:100);
+            &:hover{
+                background-color: rgba(66,133,244,.12);
+                cursor: pointer;
+            }
         }
     }
 
     .body__middle{
+        position: relative;
         width: 1155px;
         margin-top: 5px;
+        // display: flex;
+        // justify-content: center;
         margin-left: auto;
         margin-right: auto;
         border-radius: 10px;
         box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
         .body__middle__title{
             height: 40px;
-            background-color: orange;
             border-top-left-radius: 10px;
             border-top-right-radius: 10px;
+            border-bottom: 0.7px solid gray;
             display: flex;
             justify-content: space-between;
             .body__middle__title__left{
@@ -105,59 +143,107 @@ body{
                 #lang-1{
                     @include c.language;
                     border-top-left-radius: 10px;
+                    &:hover{
+                        cursor: pointer;
+                        background-color: rgba(60,64,67,.08);
+                    }
                 }
                 #lang-2{
                     @include c.language;
+                    &:hover{
+                        cursor: pointer;
+                        background-color: rgba(60,64,67,.08);
+                    }
                 }
                 #lang-3{
                     @include c.language;
+                    &:hover{
+                        cursor: pointer;
+                        background-color: rgba(60,64,67,.08);
+                    }
                 }
                 #lang-4{
                     @include c.language;
+                    &:hover{
+                        cursor: pointer;
+                        background-color: rgba(60,64,67,.08);
+                    }
                 }
                 #lang-5{
                     @include c.language;
                     margin-left: 10px;
+                    padding: 5px 7px;
+                    &:hover{
+                        cursor: pointer;
+                        background-color: rgba(60,64,67,.08);
+                        border-radius: 50%;
+                    }
                 }
             }
             .body__middle__title__mid{
-                margin-left: auto;
+                position: absolute;
+                right: 48%;
                 img{
                     height: 40px;
                     width: 40px;
                     padding: 10px;
+                    &:hover{
+                        cursor: pointer;
+                        background-color: rgba(60,64,67,.08);
+                        border-radius: 50%;
+                    }
                 }
             }
             .body__middle__title__right{
                 display: flex;
                 width: 50%;
+                padding-left: 30px;
                 #lang-6{
                     @include c.language;
+                    &:hover{
+                        cursor: pointer;
+                        background-color: rgba(60,64,67,.08);
+                    }
                 }
                 #lang-7{
                     @include c.language;
+                    &:hover{
+                        cursor: pointer;
+                        background-color: rgba(60,64,67,.08);
+                    }
                 }
                 #lang-8{
                     @include c.language;
+                    &:hover{
+                        cursor: pointer;
+                        background-color: rgba(60,64,67,.08);
+                    }
                 }
                 #lang-9{
                     @include c.language;
                     margin-left: 10px;
+                    padding: 6px 8px;
+                    &:hover{
+                        cursor: pointer;
+                        background-color: rgba(60,64,67,.08);
+                        border-radius: 50%;
+                    }
                 }
             }
         }
         .body__middle__body{
             width: 1155px;
             height: 150px;
-            background-color: deeppink;
             border-bottom-left-radius:10px;
             border-bottom-right-radius:10px;
+            display: flex;
             .body__middle__body__left{
-                height: 70%;
-
+                height: 100%;
+                width: 50%;
+                border-right: 0.5px solid darkgray;
                 .body__middle__body__left__upper{
-                    width: 50%;
-                    height: 80%;
+                    width: 100%;
+                    height: 70%;
                     input{
                         border: none;
                         display: block;
@@ -165,9 +251,111 @@ body{
                         height: 100%;
                     }
                 }
+                .body__middle__body__left__down{
+                    width: 100%;
+                    height: 30%;
+                    padding: 10px 15px;
+                    @extend %give-center;
+                    justify-content:space-between;
+                    svg{
+                        padding: 5px;
+                        width: 35px;
+                        height: 35px;
+                        fill: #5f6368;
+                        &:hover{
+                            cursor: pointer;
+                            background-color: rgba(60,64,67,.08);
+                            border-radius: 50%;
+                        }
+                    }
+                    .body__middle__body__left__down__right{
+                        @extend %give-center;
+                        gap: 10px;
+                        span{
+                            font-size: 15px;
+                        }
+                        img{
+                            height: 20px;
+                            width: 20px;
+                        }
+                        svg{
+                            width: 25px;
+                            &:hover{
+                                cursor:default;
+                                background-color: white;
+                            }
+                        }
+                    }
+                }
+            }
+            .body__midddle__body__right{
+                width: 50%;
+                height: 100%;
+                display: inline;
+                margin-bottom: auto;
+                border-bottom-right-radius: 10px;
+                input{
+                    height: 100%;
+                    width: 100%;
+                border-bottom-right-radius: 10px;
+                    border: none;
+                }
             }
         }
     }
 }
+.body__small_text{
+    width: 1155px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: end;
+    font-size: 10px;
+    padding-right: 10px;
+    margin-top: 15px;
+    font-family:  Arial, sans-serif;
+    font-style: italic;
+    display: block;
+    &:hover{
+        text-decoration: underline;
+    }
+}
 
-
+.body__end__icons{
+    display: flex;
+    justify-content: center;
+    padding: 70px;
+    gap: 40px;
+    .body__end__icon__watch{
+        border: 1px solid rgba(0,0,0,0.12);
+        border-radius: 50%;
+        padding: 15px;
+        @extend %give-center;
+        svg{
+            width: 30px;
+            height: 30px;
+            fill: #757575;
+        }
+    }
+    .body__end__icon__star{
+        border: 1px solid rgba(0,0,0,0.12);
+        border-radius: 50%;
+        padding: 15px;
+        @extend %give-center;
+        svg{
+            width: 30px;
+            height: 30px;
+            fill: #757575;
+        }
+    }
+    .body__end__icon__contact{
+        border: 1px solid rgba(0,0,0,0.12);
+        border-radius: 50%;
+        padding: 15px;
+        @extend %give-center;
+        svg{
+            width: 30px;
+            height: 30px;
+            fill: #757575;
+        }
+    }
+}

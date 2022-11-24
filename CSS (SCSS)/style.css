@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-.navbar .navbar__left, .navbar .navbar__left .navbar__left__icon__right, .navbar .navbar__right, .body .body__title, .body .body__title .body__btn {
+.navbar .navbar__left, .navbar .navbar__left .navbar__left__icon__right, .navbar .navbar__right, .body .body__title, .body .body__title .body__btn, .body .body__middle .body__middle__body .body__middle__body__left .body__middle__body__left__down, .body .body__middle .body__middle__body .body__middle__body__left .body__middle__body__left__down .body__middle__body__left__down__right, .body__end__icons .body__end__icon__watch, .body__end__icons .body__end__icon__star, .body__end__icons .body__end__icon__contact {
   display: flex;
   align-items: center;
 }
@@ -17,8 +17,6 @@
 
 .navbar {
   height: 60px;
-  padding: 10px;
-  background-color: violet;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 .navbar .navbar__left {
@@ -26,7 +24,15 @@
   margin-left: 10px;
 }
 .navbar .navbar__left .navbar__left__icon {
-  width: 20px;
+  width: 45px;
+  height: 45px;
+  padding: 10px;
+  fill: #5f6368;
+}
+.navbar .navbar__left .navbar__left__icon:hover {
+  background-color: rgba(60, 64, 67, 0.08);
+  border-radius: 50%;
+  cursor: pointer;
 }
 .navbar .navbar__left .navbar__left__icon__right {
   gap: 5px;
@@ -37,19 +43,35 @@
   font-size: 20px;
   font-weight: 300;
 }
+.navbar .navbar__left .navbar__left__icon__right:hover {
+  cursor: pointer;
+}
 .navbar .navbar__right {
   gap: 15px;
   margin-right: 8px;
 }
 .navbar .navbar__right .navbar__right__icon {
-  width: 20px;
+  width: 45px;
+  height: 45px;
+  padding: 10PX;
+}
+.navbar .navbar__right .navbar__right__icon:hover {
+  background-color: rgba(60, 64, 67, 0.08);
+  border-radius: 50%;
+  cursor: pointer;
 }
 .navbar .navbar__right img {
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   -o-object-fit: cover;
      object-fit: cover;
+  padding: 5px;
+}
+.navbar .navbar__right img:hover {
+  background-color: rgba(60, 64, 67, 0.08);
+  border-radius: 50%;
+  cursor: pointer;
 }
 
 body {
@@ -81,6 +103,10 @@ body {
   border: 1px solid rgba(128, 128, 128, 0.149);
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
 }
+.body .body__title #btn-1:hover {
+  background-color: rgba(66, 133, 244, 0.12);
+  cursor: pointer;
+}
 .body .body__title #btn-2 {
   width: 95;
   height: 35px;
@@ -90,6 +116,10 @@ body {
   border-radius: 5px;
   border: 1px solid rgba(128, 128, 128, 0.149);
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+.body .body__title #btn-2:hover {
+  background-color: rgba(66, 133, 244, 0.12);
+  cursor: pointer;
 }
 .body .body__title #btn-3 {
   width: 100;
@@ -101,7 +131,12 @@ body {
   border: 1px solid rgba(128, 128, 128, 0.149);
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
 }
+.body .body__title #btn-3:hover {
+  background-color: rgba(66, 133, 244, 0.12);
+  cursor: pointer;
+}
 .body .body__middle {
+  position: relative;
   width: 1155px;
   margin-top: 5px;
   margin-left: auto;
@@ -111,9 +146,9 @@ body {
 }
 .body .body__middle .body__middle__title {
   height: 40px;
-  background-color: orange;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  border-bottom: 0.7px solid gray;
   display: flex;
   justify-content: space-between;
 }
@@ -137,6 +172,10 @@ body {
   align-items: center;
   border-top-left-radius: 10px;
 }
+.body .body__middle .body__middle__title .body__middle__title__left #lang-1:hover {
+  cursor: pointer;
+  background-color: rgba(60, 64, 67, 0.08);
+}
 .body .body__middle .body__middle__title .body__middle__title__left #lang-2 {
   padding: 0px 13px;
   width: -webkit-max-content;
@@ -147,6 +186,10 @@ body {
   background-color: white;
   display: flex;
   align-items: center;
+}
+.body .body__middle .body__middle__title .body__middle__title__left #lang-2:hover {
+  cursor: pointer;
+  background-color: rgba(60, 64, 67, 0.08);
 }
 .body .body__middle .body__middle__title .body__middle__title__left #lang-3 {
   padding: 0px 13px;
@@ -159,6 +202,10 @@ body {
   display: flex;
   align-items: center;
 }
+.body .body__middle .body__middle__title .body__middle__title__left #lang-3:hover {
+  cursor: pointer;
+  background-color: rgba(60, 64, 67, 0.08);
+}
 .body .body__middle .body__middle__title .body__middle__title__left #lang-4 {
   padding: 0px 13px;
   width: -webkit-max-content;
@@ -169,6 +216,10 @@ body {
   background-color: white;
   display: flex;
   align-items: center;
+}
+.body .body__middle .body__middle__title .body__middle__title__left #lang-4:hover {
+  cursor: pointer;
+  background-color: rgba(60, 64, 67, 0.08);
 }
 .body .body__middle .body__middle__title .body__middle__title__left #lang-5 {
   padding: 0px 13px;
@@ -181,18 +232,31 @@ body {
   display: flex;
   align-items: center;
   margin-left: 10px;
+  padding: 5px 7px;
+}
+.body .body__middle .body__middle__title .body__middle__title__left #lang-5:hover {
+  cursor: pointer;
+  background-color: rgba(60, 64, 67, 0.08);
+  border-radius: 50%;
 }
 .body .body__middle .body__middle__title .body__middle__title__mid {
-  margin-left: auto;
+  position: absolute;
+  right: 48%;
 }
 .body .body__middle .body__middle__title .body__middle__title__mid img {
   height: 40px;
   width: 40px;
   padding: 10px;
 }
+.body .body__middle .body__middle__title .body__middle__title__mid img:hover {
+  cursor: pointer;
+  background-color: rgba(60, 64, 67, 0.08);
+  border-radius: 50%;
+}
 .body .body__middle .body__middle__title .body__middle__title__right {
   display: flex;
   width: 50%;
+  padding-left: 30px;
 }
 .body .body__middle .body__middle__title .body__middle__title__right #lang-6 {
   padding: 0px 13px;
@@ -205,6 +269,10 @@ body {
   display: flex;
   align-items: center;
 }
+.body .body__middle .body__middle__title .body__middle__title__right #lang-6:hover {
+  cursor: pointer;
+  background-color: rgba(60, 64, 67, 0.08);
+}
 .body .body__middle .body__middle__title .body__middle__title__right #lang-7 {
   padding: 0px 13px;
   width: -webkit-max-content;
@@ -215,6 +283,10 @@ body {
   background-color: white;
   display: flex;
   align-items: center;
+}
+.body .body__middle .body__middle__title .body__middle__title__right #lang-7:hover {
+  cursor: pointer;
+  background-color: rgba(60, 64, 67, 0.08);
 }
 .body .body__middle .body__middle__title .body__middle__title__right #lang-8 {
   padding: 0px 13px;
@@ -227,6 +299,10 @@ body {
   display: flex;
   align-items: center;
 }
+.body .body__middle .body__middle__title .body__middle__title__right #lang-8:hover {
+  cursor: pointer;
+  background-color: rgba(60, 64, 67, 0.08);
+}
 .body .body__middle .body__middle__title .body__middle__title__right #lang-9 {
   padding: 0px 13px;
   width: -webkit-max-content;
@@ -238,24 +314,132 @@ body {
   display: flex;
   align-items: center;
   margin-left: 10px;
+  padding: 6px 8px;
+}
+.body .body__middle .body__middle__title .body__middle__title__right #lang-9:hover {
+  cursor: pointer;
+  background-color: rgba(60, 64, 67, 0.08);
+  border-radius: 50%;
 }
 .body .body__middle .body__middle__body {
   width: 1155px;
   height: 150px;
-  background-color: deeppink;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+  display: flex;
 }
 .body .body__middle .body__middle__body .body__middle__body__left {
-  height: 70%;
+  height: 100%;
+  width: 50%;
+  border-right: 0.5px solid darkgray;
 }
 .body .body__middle .body__middle__body .body__middle__body__left .body__middle__body__left__upper {
-  width: 50%;
-  height: 80%;
+  width: 100%;
+  height: 70%;
 }
 .body .body__middle .body__middle__body .body__middle__body__left .body__middle__body__left__upper input {
   border: none;
   display: block;
   width: 100%;
   height: 100%;
+}
+.body .body__middle .body__middle__body .body__middle__body__left .body__middle__body__left__down {
+  width: 100%;
+  height: 30%;
+  padding: 10px 15px;
+  justify-content: space-between;
+}
+.body .body__middle .body__middle__body .body__middle__body__left .body__middle__body__left__down svg {
+  padding: 5px;
+  width: 35px;
+  height: 35px;
+  fill: #5f6368;
+}
+.body .body__middle .body__middle__body .body__middle__body__left .body__middle__body__left__down svg:hover {
+  cursor: pointer;
+  background-color: rgba(60, 64, 67, 0.08);
+  border-radius: 50%;
+}
+.body .body__middle .body__middle__body .body__middle__body__left .body__middle__body__left__down .body__middle__body__left__down__right {
+  gap: 10px;
+}
+.body .body__middle .body__middle__body .body__middle__body__left .body__middle__body__left__down .body__middle__body__left__down__right span {
+  font-size: 15px;
+}
+.body .body__middle .body__middle__body .body__middle__body__left .body__middle__body__left__down .body__middle__body__left__down__right img {
+  height: 20px;
+  width: 20px;
+}
+.body .body__middle .body__middle__body .body__middle__body__left .body__middle__body__left__down .body__middle__body__left__down__right svg {
+  width: 25px;
+}
+.body .body__middle .body__middle__body .body__middle__body__left .body__middle__body__left__down .body__middle__body__left__down__right svg:hover {
+  cursor: default;
+  background-color: white;
+}
+.body .body__middle .body__middle__body .body__midddle__body__right {
+  width: 50%;
+  height: 100%;
+  display: inline;
+  margin-bottom: auto;
+  border-bottom-right-radius: 10px;
+}
+.body .body__middle .body__middle__body .body__midddle__body__right input {
+  height: 100%;
+  width: 100%;
+  border-bottom-right-radius: 10px;
+  border: none;
+}
+
+.body__small_text {
+  width: 1155px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: end;
+  font-size: 10px;
+  padding-right: 10px;
+  margin-top: 15px;
+  font-family: Arial, sans-serif;
+  font-style: italic;
+  display: block;
+}
+.body__small_text:hover {
+  text-decoration: underline;
+}
+
+.body__end__icons {
+  display: flex;
+  justify-content: center;
+  padding: 70px;
+  gap: 40px;
+}
+.body__end__icons .body__end__icon__watch {
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 50%;
+  padding: 15px;
+}
+.body__end__icons .body__end__icon__watch svg {
+  width: 30px;
+  height: 30px;
+  fill: #757575;
+}
+.body__end__icons .body__end__icon__star {
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 50%;
+  padding: 15px;
+}
+.body__end__icons .body__end__icon__star svg {
+  width: 30px;
+  height: 30px;
+  fill: #757575;
+}
+.body__end__icons .body__end__icon__contact {
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 50%;
+  padding: 15px;
+}
+.body__end__icons .body__end__icon__contact svg {
+  width: 30px;
+  height: 30px;
+  fill: #757575;
 }
