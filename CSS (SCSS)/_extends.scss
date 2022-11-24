@@ -1,0 +1,14 @@
+%clean-page{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+%give-center{
+    display: flex;
+    align-items: center;
+}
+%center-between{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

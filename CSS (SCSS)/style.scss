@@ -1,0 +1,173 @@
+@use "mixins" as c;
+@use "extends";
+
+*{
+    @extend %clean-page;
+}
+
+.navbar{
+    height: 60px;
+    padding: 10px;
+    @extend %center-between;
+    background-color: violet;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    .navbar__left{
+        @extend %give-center;
+        gap: 10px;
+        margin-left: 10px;
+        .navbar__left__icon{
+            width: 20px;
+        }
+        .navbar__left__icon__right{
+            @extend %give-center;
+            gap: 5px;
+            span{
+                color: #5f6368;
+                font-family:  Arial, sans-serif;
+                font-size: 20px;
+                font-weight: 300;
+            }
+        }
+    }
+    .navbar__right{
+        @extend %give-center;
+        gap: 15px;
+        margin-right: 8px;
+        .navbar__right__icon{
+            width: 20px;
+        }
+        img{
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+    }
+}
+
+body{
+    height: 1000px;
+}
+
+.body{
+    .body__title{
+        @extend %give-center;
+        height: 50px;
+        width: 1155px;
+        margin-left: auto;
+        margin-right: auto;
+        gap: 10px;
+        margin-top: 10px;
+        .body__btn{
+            @extend %give-center;
+            span{
+                font-family:  Arial, sans-serif;
+                font-size: 15px;
+            }
+            .body__btn__icon{
+                svg{
+                height: 18px;
+                }
+            }
+        }
+        #btn-1{
+            @include c.btncolor($color:#1967d2,$size:90);
+        }
+        #btn-2{
+            @include c.btncolor($color:#1967d2,$size:95);
+        }
+        #btn-3{
+            @include c.btncolor($color:#1967d2,$size:100);
+        }
+    }
+
+    .body__middle{
+        width: 1155px;
+        margin-top: 5px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+        .body__middle__title{
+            height: 40px;
+            background-color: orange;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            .body__middle__title__left{
+                display: flex;
+                span{
+                font-family:  Arial, sans-serif;
+                font-size: 13px;
+                font-size: 900;
+                }
+                #lang-1{
+                    @include c.language;
+                    border-top-left-radius: 10px;
+                }
+                #lang-2{
+                    @include c.language;
+                }
+                #lang-3{
+                    @include c.language;
+                }
+                #lang-4{
+                    @include c.language;
+                }
+                #lang-5{
+                    @include c.language;
+                    margin-left: 10px;
+                }
+            }
+            .body__middle__title__mid{
+                margin-left: auto;
+                img{
+                    height: 40px;
+                    width: 40px;
+                    padding: 10px;
+                }
+            }
+            .body__middle__title__right{
+                display: flex;
+                width: 50%;
+                #lang-6{
+                    @include c.language;
+                }
+                #lang-7{
+                    @include c.language;
+                }
+                #lang-8{
+                    @include c.language;
+                }
+                #lang-9{
+                    @include c.language;
+                    margin-left: 10px;
+                }
+            }
+        }
+        .body__middle__body{
+            width: 1155px;
+            height: 150px;
+            background-color: deeppink;
+            border-bottom-left-radius:10px;
+            border-bottom-right-radius:10px;
+            .body__middle__body__left{
+                height: 70%;
+
+                .body__middle__body__left__upper{
+                    width: 50%;
+                    height: 80%;
+                    input{
+                        border: none;
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
