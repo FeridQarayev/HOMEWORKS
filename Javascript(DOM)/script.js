@@ -118,7 +118,8 @@ saveBtn.onclick=()=>{
 
     deletebtn.innerHTML=deleteSvg;
     deletebtn.onclick=()=>{
-        cardsContainer.removeChild(card)
+        let result = confirm("Want to delete?");
+        if(result) cardsContainer.removeChild(card)
     }
     
     card.style.borderColor=color[0];

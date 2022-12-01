@@ -110,7 +110,7 @@ body .container__buttons #saveBtn:hover {
 body .container__search {
   position: relative;
   width: 32%;
-  margin: 20px auto 50px;
+  margin: 20px auto 30px;
 }
 body .container__search input {
   width: 100%;
