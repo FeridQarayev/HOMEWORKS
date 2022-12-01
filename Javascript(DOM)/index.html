@@ -11,7 +11,7 @@
     <div class="container">
       <h2>Dada Redux <span>Note</span>Pad</h2>
       <input id="title" type="text" placeholder="Note Title" />
-      <textarea cols="30" rows="10" placeholder="Write note..."></textarea>
+      <textarea id="textarea" cols="30" rows="10" placeholder="Write note..."></textarea>
 
       <div class="container__buttons">
         <div class="container__buttons__list">
@@ -26,7 +26,7 @@
         <button id="saveBtn">Save ✓</button>
       </div>
       <div class="container__search">
-        <input type="text" placeholder="Write to search.." />
+        <input id="searchBtn" type="text" placeholder="Write to search.." />
         <svg
           stroke="currentColor"
           fill="currentColor"
@@ -46,7 +46,8 @@
         </svg>
       </div>
 
-      <div id="totalContainer"></div>
+      <div id="totalContainer">
+      </div>
     </div>
     <div class="footer">
       <div class="footer__card">
