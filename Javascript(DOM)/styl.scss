@@ -1,0 +1,171 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    background-color: #ede7f6;
+    .container{
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        font-family: Roboto Mono,monospace;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h2{
+            margin:20px auto;
+            font-size: 26px;
+            span{
+                color: rgb(126, 87, 194);
+            }
+        }
+        #title{
+            border: 1px solid rgb(126, 87, 194);
+            outline-color: rgb(81, 45, 168);
+            width: 30%;
+            border-radius: 7px;
+            padding: 10px;
+        }
+        textarea{
+            border: 1px solid rgb(126, 87, 194);
+            padding: 10px;
+            border-radius: 7px;
+            margin-top: 25px;
+            width: 30%;
+            outline-color: rgb(81, 45, 168);
+        }
+        &__buttons{
+            width: 30%;
+            margin: 10px auto;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            &__list{
+                gap: 15px;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                .container__buttons__color{
+                    display: block;
+                    background-color: rgb(240, 98, 146);
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border: 1px solid rgba(0, 0, 0, 0.2);
+                    transition: all 0.2s ease 0s;
+                    &:hover{
+                        transform:translateY(-1px);
+                        opacity: 0.7;
+                    }
+                    span{
+                        display: none;
+                        font-size: 18px;
+                    }
+                }
+                #btn-1{
+                    background-color: rgb(240, 98, 146);
+                }
+                #btn-2{
+                    background-color: rgb(186, 104, 200);
+                }
+                #btn-3{
+                    background-color: rgb(79, 195, 247);
+                }
+                #btn-4{
+                    background-color: rgb(255, 213, 79);
+                }
+                #btn-5{
+                    background-color: rgb(174, 213, 129);
+                }
+            }
+            #saveBtn{
+                padding: 10px 15px;
+                background-color: rgb(126, 87, 194);
+                border-radius: 10px;
+                border: 1px;
+                box-shadow: rgb(50 50 93 / 25%) 0px 2px 5px -1px, rgb(0 0 0 / 30%) 0px 1px 3px -1px;
+                font-weight: 500;
+                color: white;
+                transition: all 0.2s ease 0s;
+                &:hover{
+                    box-shadow: rgb(0 0 0 / 19%) 0px 10px 20px, rgb(0 0 0 / 23%) 0px 6px 6px;
+                    cursor: pointer;
+                    opacity: 0.9;
+                }
+            }
+        }
+        &__search{
+            position: relative;
+            width: 32%;
+            margin: 20px auto 20px;
+            input{
+                width: 100%;
+                padding: 10px;
+                border: 1px solid rgb(126, 87, 194);
+                outline-color: rgb(81, 45, 168);
+                border-radius: 7px;
+            }
+            svg{
+                position: absolute;
+                right: 12px;
+            }
+        }
+    }
+}
+.footer{
+    background-color: rgb(216, 181, 228);
+    width: 100%;
+    margin-top: auto;
+    padding: 5px 0px 50px;
+    &__card{
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 40px;
+        text-align: center;
+        &__links{
+            a{
+                color: black;
+            }
+            svg{
+                background-color: #fff;
+                border-radius: 50%;
+                box-shadow: 0 2px 4px 0 hsl(0deg 0% 100% / 82%), 0 2px 16px 0 #fff;
+                color: rgba(0,0,0,.8);
+                font-size: 40px;
+                margin: 10px;
+                padding: 5px;
+                transition: color .2s,box-shadow 1s;
+                &:hover{
+                    box-shadow: 0 54px 55px hsl(0deg 0% 100% / 25%), 0 -12px 30px hsl(0deg 0% 100% / 12%), 0 4px 6px hsl(0deg 0% 100% / 12%), 0 12px 13px hsl(0deg 0% 100% / 17%), 0 -3px 5px hsl(0deg 0% 100% / 9%);
+                    color: #000;
+                }
+            }
+        }
+        &__title{
+            font-family: Roboto Mono,monospace;
+            a{
+                color: rgba(0, 0, 0, 0.4);
+                display: block;
+                font-size: 24px;
+                margin-top: 15px;
+                color: rgba(0, 0, 0, 0.4);
+                text-decoration: none;
+                transition: all 0.2s ease 0s;
+                padding: 5px;
+                &:hover{
+                    color: rgba(0, 0, 0, 0.8);
+                }
+                span{
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}

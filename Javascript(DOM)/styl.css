@@ -1,0 +1,171 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  background-color: #ede7f6;
+}
+body .container {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-family: Roboto Mono, monospace;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .container h2 {
+  margin: 20px auto;
+  font-size: 26px;
+}
+body .container h2 span {
+  color: rgb(126, 87, 194);
+}
+body .container #title {
+  border: 1px solid rgb(126, 87, 194);
+  outline-color: rgb(81, 45, 168);
+  width: 30%;
+  border-radius: 7px;
+  padding: 10px;
+}
+body .container textarea {
+  border: 1px solid rgb(126, 87, 194);
+  padding: 10px;
+  border-radius: 7px;
+  margin-top: 25px;
+  width: 30%;
+  outline-color: rgb(81, 45, 168);
+}
+body .container__buttons {
+  width: 30%;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+body .container__buttons__list {
+  gap: 15px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+body .container__buttons__list .container__buttons__color {
+  display: block;
+  background-color: rgb(240, 98, 146);
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease 0s;
+}
+body .container__buttons__list .container__buttons__color:hover {
+  transform: translateY(-1px);
+  opacity: 0.7;
+}
+body .container__buttons__list .container__buttons__color span {
+  display: none;
+  font-size: 18px;
+}
+body .container__buttons__list #btn-1 {
+  background-color: rgb(240, 98, 146);
+}
+body .container__buttons__list #btn-2 {
+  background-color: rgb(186, 104, 200);
+}
+body .container__buttons__list #btn-3 {
+  background-color: rgb(79, 195, 247);
+}
+body .container__buttons__list #btn-4 {
+  background-color: rgb(255, 213, 79);
+}
+body .container__buttons__list #btn-5 {
+  background-color: rgb(174, 213, 129);
+}
+body .container__buttons #saveBtn {
+  padding: 10px 15px;
+  background-color: rgb(126, 87, 194);
+  border-radius: 10px;
+  border: 1px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  font-weight: 500;
+  color: white;
+  transition: all 0.2s ease 0s;
+}
+body .container__buttons #saveBtn:hover {
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  cursor: pointer;
+  opacity: 0.9;
+}
+body .container__search {
+  position: relative;
+  width: 32%;
+  margin: 20px auto 20px;
+}
+body .container__search input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid rgb(126, 87, 194);
+  outline-color: rgb(81, 45, 168);
+  border-radius: 7px;
+}
+body .container__search svg {
+  position: absolute;
+  right: 12px;
+}
+
+.footer {
+  background-color: rgb(216, 181, 228);
+  width: 100%;
+  margin-top: auto;
+  padding: 5px 0px 50px;
+}
+.footer__card {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  text-align: center;
+}
+.footer__card__links a {
+  color: black;
+}
+.footer__card__links svg {
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px 0 hsla(0deg, 0%, 100%, 0.82), 0 2px 16px 0 #fff;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 40px;
+  margin: 10px;
+  padding: 5px;
+  transition: color 0.2s, box-shadow 1s;
+}
+.footer__card__links svg:hover {
+  box-shadow: 0 54px 55px hsla(0deg, 0%, 100%, 0.25), 0 -12px 30px hsla(0deg, 0%, 100%, 0.12), 0 4px 6px hsla(0deg, 0%, 100%, 0.12), 0 12px 13px hsla(0deg, 0%, 100%, 0.17), 0 -3px 5px hsla(0deg, 0%, 100%, 0.09);
+  color: #000;
+}
+.footer__card__title {
+  font-family: Roboto Mono, monospace;
+}
+.footer__card__title a {
+  color: rgba(0, 0, 0, 0.4);
+  display: block;
+  font-size: 24px;
+  margin-top: 15px;
+  color: rgba(0, 0, 0, 0.4);
+  text-decoration: none;
+  transition: all 0.2s ease 0s;
+  padding: 5px;
+}
+.footer__card__title a:hover {
+  color: rgba(0, 0, 0, 0.8);
+}
+.footer__card__title a span {
+  font-size: 16px;
+}
