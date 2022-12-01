@@ -4,6 +4,9 @@
     box-sizing: border-box;
     text-decoration: none;
 }
+html{
+    height: 100%;
+}
 body{
     background-color: #ede7f6;
     .container{
@@ -103,7 +106,7 @@ body{
         &__search{
             position: relative;
             width: 32%;
-            margin: 20px auto 20px;
+            margin: 20px auto 50px;
             input{
                 width: 100%;
                 padding: 10px;
@@ -114,6 +117,42 @@ body{
             svg{
                 position: absolute;
                 right: 12px;
+            }
+        }
+        .totalContainer{
+            width: 70%;
+            margin: 20px auto;
+            &__card{
+                width: 300px;
+                height: 350px;
+                display: inline-block;
+                border-radius: 15px;
+                border: 2px dashed rgb(240, 98, 146);
+                margin: 20px 20px 10px;
+                h4{
+                    margin: 0px;
+                    border-top-left-radius: 15px;
+                    border-top-right-radius: 15px;
+                    background-color: rgba(240, 98, 146, 0.4);
+                    text-align: left;
+                    padding: 10px;
+                    position: relative;
+                    svg{
+                        cursor: pointer;
+                        font-size: 20px;
+                        position: absolute;
+                        right: 10px;
+                        top: 11px;
+                    }
+                }
+                p{
+                    padding: 10px;
+                    height: 76%;
+                    text-align: left;
+                    margin: 0px;
+                    overflow: auto;
+                    font-size: 14px;
+                }
             }
         }
     }
