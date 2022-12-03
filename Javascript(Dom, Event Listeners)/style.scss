@@ -1,0 +1,163 @@
+*{
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Lato,sans-serif;
+}
+body{
+    background-color: #dfe6e9;
+    display: block;
+    margin: 0px;
+    .navbar{
+        background-color: white;
+        h2{
+            width: 60%;
+            margin: auto;
+            padding: 25px 0px;
+        }
+    }
+    .body{
+        width: 100%;
+        box-sizing: border-box;
+        &__title{
+            width: 60%;
+            height: 250px;
+            margin: 15px auto;
+            text-align: center;
+            background-color: white;
+            padding: 10px 15px;
+            &__up{
+                border-radius: 50%;
+                width: 160px;
+                height: 160px;
+                background-color: rgb(162, 155, 254);
+                margin: auto;
+                display: flex;
+                -webkit-box-align: center;
+                align-items: center;
+                -webkit-box-pack: center;
+                justify-content: center;
+                img{
+                    width: 150px;
+                    height: 150px;
+                    border-radius: 50%;
+                }
+            }
+            h1{
+                color: #a29bfe;
+
+            }
+        }
+        &__totalmoney{
+            width: 60%;
+            margin: 0px auto 10px;
+            text-align: center;
+            background-color: rgb(108, 92, 231);
+            padding: 0px 15px;
+            position: sticky;
+            top: 5px;
+            z-index: 999;
+            box-shadow: rgb(108 92 231) 0px 25px 20px -15px;
+            h1{
+                color: #fff;
+                margin: 0;
+                padding: 15px 0;
+            }
+        }
+        &__cards{
+            width: 60%;
+            text-align: center;
+            margin: auto auto 20px;
+            padding: 0px 15px;
+            &__card{
+                width: 280px;
+                height: fit-content;
+                display: inline-block;
+                text-align: center;
+                padding: 15px;
+                background-color: white;
+                margin: 10px;
+                box-shadow: rgb(120 120 120 / 35%) 1.95px 1.95px 2.6px;
+                transition: all 0.2s ease 0s;
+                &__up{
+                    width: 90%;
+                    height: 150px;
+                    text-align: center;
+                    margin: auto;
+                    display: flex;
+                    -webkit-box-pack: center;
+                    justify-content: center;
+                    img{
+                        max-height: 90%;
+                        max-width: 90%;
+                        margin: auto;
+                    }
+                }
+                h3{
+                    padding: 0px;
+                }
+                h4{
+                    padding: 0px;
+                    opacity: 0.6;
+                }
+                &__down{
+                    width: 95%;
+                    margin: auto;
+                    text-align: center;
+                    display: flex;
+                    justify-content: space-around;
+                    &__sellbtn{
+                        width: 30%;
+                        padding: 8px 25px;
+                        border: none;
+                        background-color: rgb(220, 220, 220);
+                        border-radius: 2px;
+                        color: white;
+                        font-weight: 700;
+                        box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+                        transition: all 0.2s ease 0s;
+                        cursor: pointer;
+                        &:hover{
+                            transform: translateY(-1px);
+                            opacity: 0.9;
+                        }
+                    }
+                    &__inp{
+                        width: 25%;
+                        padding: 4px 10px;
+                        border-radius: 5px;
+                        border: 1px solid rgb(162, 155, 254);
+                        text-align: center;
+                        outline-color: rgb(220, 220, 220);
+                        &:focus{
+                            outline-offset: 0px;
+                        }
+                    }
+                    input::-webkit-outer-spin-button,
+                    input::-webkit-inner-spin-button {
+                        -webkit-appearance: none;
+                    }
+                    &__buybtn{
+                        width: 30%;
+                        padding: 8px 25px;
+                        border: none;
+                        background-color: rgb(162, 155, 254);
+                        border-radius: 2px;
+                        color: white;
+                        font-weight: 700;
+                        box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+                        transition: all 0.2s ease 0s;
+                        cursor: pointer;
+                        &:hover{
+                            transform: translateY(-1px);
+                            opacity: 0.9;
+                        }
+                    }
+                }
+                &:hover{
+                    box-shadow: rgb(120 120 120 / 65%) 1.95px 1.95px 12.6px;
+                }
+            }
+        }
+    }
+}
