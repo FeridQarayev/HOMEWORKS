@@ -162,6 +162,61 @@ body .body__cards__card__down__buybtn:hover {
 body .body__cards__card:hover {
   box-shadow: rgba(120, 120, 120, 0.65) 1.95px 1.95px 12.6px;
 }
+body .body__receipt {
+  width: 50%;
+  margin: 15px auto 65px;
+  text-align: center;
+  background-color: white;
+  padding: 15px 20px 20px;
+}
+body .body__receipt h2 {
+  margin: 0px;
+}
+body .body__receipt__card {
+  margin-top: 15px;
+  background-color: rgb(162, 155, 254);
+  border-radius: 20px;
+  padding: 15px;
+}
+body .body__receipt__card__item {
+  width: 80%;
+  margin: auto;
+}
+body .body__receipt__card__item__left {
+  width: 30%;
+  color: white;
+  display: inline-block;
+  text-align: left;
+}
+body .body__receipt__card__item__center {
+  width: 30%;
+  color: white;
+  display: inline-block;
+  text-align: center;
+}
+body .body__receipt__card__item__right {
+  width: 30%;
+  color: white;
+  display: inline-block;
+  text-align: right;
+}
+body .body__receipt__card__line {
+  width: 80%;
+  margin: auto;
+  height: 1px;
+  border-bottom: 1px dashed rgb(255, 255, 255);
+}
+body .body__receipt__card__down {
+  width: 80%;
+  margin: auto;
+  display: block;
+}
+body .body__receipt__card__down h3 {
+  width: 45%;
+  text-align: center;
+  color: white;
+  display: inline-block;
+}
 body .footer {
   background-color: rgba(108, 92, 231, 0.5);
   width: 100%;
@@ -213,6 +268,9 @@ body .footer__card__title a span {
 }
 
 @media only screen and (max-width: 1100px) {
+  .body__cards button {
+    padding: 8px 20px !important;
+  }
   .footer {
     padding: 5px 0px 40px !important;
   }
@@ -237,6 +295,9 @@ body .footer__card__title a span {
   .body__cards__card__up {
     height: 140px !important;
   }
+  .body__receipt {
+    width: 75% !important;
+  }
 }
 @media only screen and (max-width: 900px) {
   .body__cards__card {
@@ -244,6 +305,9 @@ body .footer__card__title a span {
   }
   .body__cards__card__up {
     height: 130px !important;
+  }
+  .body__cards__card button {
+    padding: 8px 10px !important;
   }
 }
 @media only screen and (max-width: 800px) {
@@ -281,6 +345,19 @@ body .footer__card__title a span {
     width: 80% !important;
     margin-top: 20px !important;
   }
+  .body__receipt {
+    width: 85% !important;
+    height: -webkit-fit-content !important;
+    height: -moz-fit-content !important;
+    height: fit-content !important;
+    padding: 15px 10px 20px !important;
+  }
+  .body__receipt__card {
+    padding: 10px !important;
+  }
+  .body__receipt__card h3 {
+    font-size: 15px !important;
+  }
 }
 @media only screen and (max-width: 700px) {
   .body__cards__card {
@@ -289,6 +366,9 @@ body .footer__card__title a span {
   }
   .body__cards__card__up {
     width: 120px !important;
+  }
+  .body__cards__card button {
+    padding: 8px 5px !important;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -309,5 +389,20 @@ body .footer__card__title a span {
   .footer__card {
     width: 90% !important;
     margin-top: 15px !important;
+  }
+  .body__receipt {
+    width: 90%;
+    padding: 15px 7px 20px !important;
+  }
+  .body__receipt__card {
+    padding: 8px !important;
+  }
+  .body__receipt__card h3 {
+    font-size: 14px !important;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .body__receipt h3 {
+    font-size: 11px !important;
   }
 }

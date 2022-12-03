@@ -161,6 +161,61 @@ body{
                 }
             }
         }
+        &__receipt{
+            width: 50%;
+            margin: 15px auto 65px;
+            text-align: center;
+            background-color: white;
+            padding: 15px 20px 20px;
+            h2{
+                margin: 0px;
+            }
+            &__card{
+                margin-top: 15px;
+                background-color: rgb(162, 155, 254);
+                border-radius: 20px;
+                padding: 15px;
+                &__item{
+                    width: 80%;
+                    margin: auto;
+                    &__left{
+                        width: 30%;
+                        color: white;
+                        display: inline-block;
+                        text-align: left;
+                    }
+                    &__center{
+                        width: 30%;
+                        color: white;
+                        display: inline-block;
+                        text-align: center;
+                    }
+                    &__right{
+                        width: 30%;
+                        color: white;
+                        display: inline-block;
+                        text-align: right;
+                    }
+                }
+                &__line{
+                    width: 80%;
+                    margin: auto;
+                    height: 1px;
+                    border-bottom: 1px dashed rgb(255, 255, 255);
+                }
+                &__down{
+                    width: 80%;
+                    margin: auto;
+                    display: block;
+                    h3{
+                        width: 45%;
+                        text-align: center;
+                        color: white;
+                        display: inline-block; 
+                    }
+                }
+            }
+        }
     }
     .footer{
         background-color: rgba(108, 92, 231, 0.5);
@@ -216,6 +271,11 @@ body{
 }
 
 @media only screen and (max-width: 1100px){
+    .body__cards{
+        button{
+            padding: 8px 20px !important;
+        }
+    }
     .footer{
         padding: 5px 0px 40px !important;
         &__card{
@@ -240,6 +300,9 @@ body{
             }
         }
     }
+    .body__receipt{
+        width: 75% !important;
+    }
 }
 @media only screen and(max-width:900px){
     .body__cards{
@@ -247,6 +310,9 @@ body{
             width: 220px !important;
             &__up{
                 height: 130px !important;
+            }
+            button{
+                padding: 8px 10px !important;
             }
         }
     }
@@ -284,6 +350,17 @@ body{
             margin-top: 20px !important;
         }
     }
+    .body__receipt{
+        width: 85% !important;
+        height: fit-content !important;
+        padding: 15px 10px 20px !important;
+        &__card{
+            padding: 10px !important;
+            h3{
+                font-size: 15px !important;
+            }
+        }
+    }
 }
 @media only screen and (max-width: 700px){
     .body__cards{
@@ -292,6 +369,9 @@ body{
             margin: 10px 5px !important;
             &__up{
                 width: 120px !important;
+            }
+            button{
+                padding: 8px 5px !important;
             }
         }
     }
@@ -313,6 +393,23 @@ body{
         &__card{
             width: 90% !important;
             margin-top: 15px !important;
+        }
+    }
+    .body__receipt{
+        width: 90%;
+        padding: 15px 7px 20px !important;
+        &__card{
+            padding: 8px !important;
+            h3{
+                font-size: 14px !important;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 400px){
+    .body__receipt{
+        h3{
+            font-size: 11px !important;
         }
     }
 }
