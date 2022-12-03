@@ -127,4 +127,8 @@ saveBtn.onclick=()=>{
     card.innerHTML= `<h4 style="background-color:${color[1]};">${title.value} </h4> <p>${textarea.value}</p>`;
     card.firstElementChild.appendChild(deletebtn)
     cardsContainer.appendChild(card)
+
+    title.value=""
+    textarea.value=""
+    offAllColors()
 }
