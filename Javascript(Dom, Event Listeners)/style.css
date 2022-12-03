@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Work+Sans:wght@400;600;700&display=swap");
 * {
   padding: 0px;
   box-sizing: border-box;
@@ -160,4 +161,53 @@ body .body__cards__card__down__buybtn:hover {
 }
 body .body__cards__card:hover {
   box-shadow: rgba(120, 120, 120, 0.65) 1.95px 1.95px 12.6px;
+}
+body .footer {
+  background-color: rgba(108, 92, 231, 0.5);
+  width: 100%;
+  margin-top: auto;
+  padding: 5px 0px 50px;
+}
+body .footer__card {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  text-align: center;
+}
+body .footer__card__links a {
+  color: black;
+}
+body .footer__card__links svg {
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px 0 hsla(0deg, 0%, 100%, 0.82), 0 2px 16px 0 #fff;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 40px;
+  margin: 10px;
+  padding: 5px;
+  transition: color 0.2s, box-shadow 1s;
+}
+body .footer__card__links svg:hover {
+  box-shadow: 0 54px 55px hsla(0deg, 0%, 100%, 0.25), 0 -12px 30px hsla(0deg, 0%, 100%, 0.12), 0 4px 6px hsla(0deg, 0%, 100%, 0.12), 0 12px 13px hsla(0deg, 0%, 100%, 0.17), 0 -3px 5px hsla(0deg, 0%, 100%, 0.09);
+  color: #000;
+}
+body .footer__card__title {
+  font-family: Roboto Mono, monospace;
+}
+body .footer__card__title a {
+  color: rgba(0, 0, 0, 0.4);
+  display: block;
+  font-size: 24px;
+  margin-top: 15px;
+  color: rgba(0, 0, 0, 0.4);
+  text-decoration: none;
+  transition: all 0.2s ease 0s;
+  padding: 5px;
+}
+body .footer__card__title a:hover {
+  color: rgba(0, 0, 0, 0.8);
+}
+body .footer__card__title a span {
+  font-size: 16px;
 }

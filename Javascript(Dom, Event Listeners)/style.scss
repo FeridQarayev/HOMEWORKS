@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Work+Sans:wght@400;600;700&display=swap');
 *{
     padding: 0px;
     box-sizing: border-box;
@@ -156,6 +157,57 @@ body{
                 }
                 &:hover{
                     box-shadow: rgb(120 120 120 / 65%) 1.95px 1.95px 12.6px;
+                }
+            }
+        }
+    }
+    .footer{
+        background-color: rgba(108, 92, 231, 0.5);
+        width: 100%;
+        margin-top: auto;
+        padding: 5px 0px 50px;
+        &__card{
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 40px;
+            text-align: center;
+            &__links{
+                a{
+                    color: black;
+                }
+                svg{
+                    background-color: #fff;
+                    border-radius: 50%;
+                    box-shadow: 0 2px 4px 0 hsl(0deg 0% 100% / 82%), 0 2px 16px 0 #fff;
+                    color: rgba(0,0,0,.8);
+                    font-size: 40px;
+                    margin: 10px;
+                    padding: 5px;
+                    transition: color .2s,box-shadow 1s;
+                    &:hover{
+                        box-shadow: 0 54px 55px hsl(0deg 0% 100% / 25%), 0 -12px 30px hsl(0deg 0% 100% / 12%), 0 4px 6px hsl(0deg 0% 100% / 12%), 0 12px 13px hsl(0deg 0% 100% / 17%), 0 -3px 5px hsl(0deg 0% 100% / 9%);
+                        color: #000;
+                    }
+                }
+            }
+            &__title{
+                font-family: Roboto Mono,monospace;
+                a{
+                    color: rgba(0, 0, 0, 0.4);
+                    display: block;
+                    font-size: 24px;
+                    margin-top: 15px;
+                    color: rgba(0, 0, 0, 0.4);
+                    text-decoration: none;
+                    transition: all 0.2s ease 0s;
+                    padding: 5px;
+                    &:hover{
+                        color: rgba(0, 0, 0, 0.8);
+                    }
+                    span{
+                        font-size: 16px;
+                    }
                 }
             }
         }
