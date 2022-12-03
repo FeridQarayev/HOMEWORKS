@@ -211,3 +211,103 @@ body .footer__card__title a:hover {
 body .footer__card__title a span {
   font-size: 16px;
 }
+
+@media only screen and (max-width: 1100px) {
+  .footer {
+    padding: 5px 0px 40px !important;
+  }
+  .footer__card {
+    width: 70% !important;
+    margin-top: 30px !important;
+  }
+}
+@media only screen and (max-width: 1050px) {
+  .body__title {
+    width: 75% !important;
+  }
+  .body__totalmoney {
+    width: 75% !important;
+  }
+  .body__cards {
+    width: 75% !important;
+  }
+  .body__cards__card {
+    width: 250px !important;
+  }
+  .body__cards__card__up {
+    height: 140px !important;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .body__cards__card {
+    width: 220px !important;
+  }
+  .body__cards__card__up {
+    height: 130px !important;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .body__title {
+    width: 85% !important;
+    height: -webkit-fit-content !important;
+    height: -moz-fit-content !important;
+    height: fit-content !important;
+    padding-bottom: 20px !important;
+  }
+  .body__title__up {
+    width: 120px !important;
+    height: 120px !important;
+  }
+  .body__title__up img {
+    width: 110px !important;
+    height: 110px !important;
+  }
+  .body__title h1 {
+    font-size: 24px !important;
+  }
+  .body__totalmoney {
+    width: 85% !important;
+  }
+  .body__totalmoney h1 {
+    font-size: 24px !important;
+  }
+  .body__cards {
+    width: 85% !important;
+  }
+  .footer {
+    padding: 5px 0px 30px !important;
+  }
+  .footer__card {
+    width: 80% !important;
+    margin-top: 20px !important;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .body__cards__card {
+    width: 190px !important;
+    margin: 10px 5px !important;
+  }
+  .body__cards__card__up {
+    width: 120px !important;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .body__title {
+    width: 95% !important;
+    padding: 10px 0px !important;
+  }
+  .body__totalmoney {
+    width: 95% !important;
+    padding: 0px !important;
+  }
+  .body__cards {
+    width: 95% !important;
+  }
+  .footer {
+    padding: 5px 0px 20px !important;
+  }
+  .footer__card {
+    width: 90% !important;
+    margin-top: 15px !important;
+  }
+}
