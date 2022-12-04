@@ -267,6 +267,14 @@ body .footer__card__title a span {
   font-size: 16px;
 }
 
+.active {
+  background-color: rgb(214, 48, 49) !important;
+}
+
+.deactive {
+  background-color: rgb(220, 220, 220) !important;
+}
+
 @media only screen and (max-width: 1100px) {
   .body__cards button {
     padding: 8px 20px !important;
