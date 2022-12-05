@@ -5,6 +5,7 @@ const input = document.querySelectorAll('.body__cards__card__down__inp')
 
 
 let max = 20;
+const regex = /\d/g;
 
 for (let i = 0; i < input.length; i++) {
     // Input Event
@@ -30,7 +31,6 @@ for (let i = 0; i < input.length; i++) {
         //     buybtn[i].classList.remove("deactive")
         // }
         calcCash(e)
-        //calculate(e)
     })
 
     // Sell Button
@@ -62,10 +62,11 @@ for (let i = 0; i < input.length; i++) {
 
 
 var money = 187000000000;
-const regex = /\d/g;
 let calcmoneys = []
 let calcmoney = 0;
+let qaliq = 0;
 let tmoney=money;
+let models= [{index:0,qaliqq:0}];
 
 //Money Calculator
 function calcCash(e){
@@ -82,18 +83,32 @@ function calcCash(e){
         let calc=(productCost * input[i].value)
         calcmoney = tmoney - (productCost * input[i].value);
         //console.log('tmoney', tmoney)
-        console.log('calcmoney', calcmoney)
+        //console.log('calcmoney', calcmoney)
         
          if (calcmoney < tmoney&& calcmoney>=0) {
              tmoney = calcmoney
              totalmoney.textContent = tmoney
+             console.log('-------------------------------------------------------------')
          }
          else{
-            //next = -1
-             //calculate(i)
-             if (e.target.value != 0) {
-                 console.log('mehsul sayi',Math.floor(((money/productCost)-(money-tmoney)/productCost)))
-                 //input[i].value = Math.floor((money/productCost)-(money-tmoney)/productCost);
+            let productCost = e.target.parentElement.parentElement.firstElementChild
+             .nextElementSibling.nextElementSibling.textContent.match(regex).join('')
+             if (input[i].value != 0) {
+                 //console.log('inp value ',input[i].value)
+                 //console.log('targetin value ',e.target.value)
+                console.log('+++++++++++++++++++++++++++++++++++++++++++++++++++++++')
+
+                //calcBonus(i)
+                
+                //totalmoney.textContent = tmoney -(productCost * Math.floor(((money/productCost)-(money-tmoney)/productCost)))
+                //let displaymoney = totalmoney.textContent
+                //console.log('display money',displaymoney)
+
+                //console.log('productun qiymeti',productCost)
+                console.log('mehsul sayi',Math.floor(((money/productCost)-(money-tmoney)/productCost)))
+                e.target.value = Math.floor(((money/productCost)-(money-tmoney)/productCost));
+
+                //input[i].value = Math.floor(tmoney/productCost);
                 //calcmoney = tmoney - (productCost * Math.floor((money/productCost)-(money-tmoney)/productCost))
                 //tmoney = calcmoney
                 }
@@ -157,23 +172,25 @@ function calcCash(e){
 //     totalmoney.textContent= makeShow(tmoney)
 }
 
-function calculate(e){
-    var mymoney = totalmoney.textContent.match(regex).join('');
-    let productCost = e.target.parentElement.parentElement.firstElementChild
-            .nextElementSibling.nextElementSibling.textContent.match(regex).join('');
-        
+function calcBonus(id){
+    let sum = 0
+    tmoney = money;
+    console.log('id',id)
+    console.log('input length',input.length)
+     for (let i = 0; i < input.length; i++) {
+        console.log("*****************************************************************")
+         let productCost = input[i].parentElement.parentElement.firstElementChild
+             .nextElementSibling.nextElementSibling.textContent.match(regex).join('')
 
-            console.log('productun cost',productCost)
-            console.log('money',mymoney)
-            if (e.target.value > Math.floor(mymoney/productCost)) {
-                e.target.value = Math.floor(mymoney/productCost)
-                console.log(Math.floor((mymoney)/productCost))
-            }
-            //console.log('array',calcmoneys)
-
-
-    // input[i].value = Math.floor((money/productCost)-(money-tmoney)/productCost);
-    console.log(Math.floor(mymoney/productCost))
+        if (id!=i && input[i].value != 0) {
+            console.log('i',i)
+            let calc=(productCost * input[i].value)
+            calcmoney = tmoney - (productCost * input[i].value);
+        }
+        sum = calcmoney
+        console.log('sum',sum)
+        return sum
+    }
 }
 
 function makeShow(text){
