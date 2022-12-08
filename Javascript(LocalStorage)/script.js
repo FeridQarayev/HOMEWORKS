@@ -3,7 +3,9 @@ const categoryInp = document.getElementById('categoryInp')
 const brandInp = document.getElementById('brandInp')
 const priceInp = document.getElementById('priceInp')
 const addBtn = document.getElementById('addBtn')
+const tableBody = document.getElementById('tableBody')
 const cardsBody = document.getElementsByClassName('cards__body')[0]
+const table = document.getElementsByClassName('table')[0]
 
 let Products = []
 let WishListProducts = []
@@ -13,6 +15,10 @@ if (localStorage.getItem('products')) {
     Products = JSON.parse(localStorage.getItem('products'))
     renderList(Products)
     index = Products[Products.length-1].id + 1
+}
+if (localStorage.getItem('wishlist')) {
+    WishListProducts = JSON.parse(localStorage.getItem('wishlist'))
+    renderWishList(WishListProducts)
 }
 
 class Product{
@@ -64,7 +70,7 @@ function renderList(array){
           <p class="card-text">${array[i].category}</p>
           <p class="card-text">${array[i].brand}</p>
           <p class="card-text">$${array[i].price}</p>
-          <a href="#" class="btn btn-primary addwish">Add to wishlist</a>
+          <a id="${array[i].id}" href="#" class="btn btn-primary addwish">Add to wishlist</a>
         </div>
       </div>`
     }
@@ -72,8 +78,32 @@ function renderList(array){
 
     const wishBtn = document.getElementsByClassName('addwish')
     for (let i = 0; i < wishBtn.length; i++) {
-        wishBtn[i].addEventListener('click',()=>{
-            console.log("salammm")
+        wishBtn[i].addEventListener('click',(e)=>{
+            AddProductWishList(e.target.id)
         })
     }
+}
+
+function AddProductWishList(id){
+    let addedProduct = Products.find((product)=>product.id == id)
+
+    WishListProducts.push(addedProduct)
+    localStorage.setItem('wishlist',JSON.stringify(WishListProducts))
+    renderWishList(WishListProducts)
+}
+
+function renderWishList(array){
+    let innerHTML = ''
+    table.style.display = 'block'
+
+    for (let i = 0; i < array.length; i++) {
+        innerHTML+= `<tr>
+        <td>${array[i].id}</td>
+        <td>${array[i].name}</td>
+        <td>${array[i].category}</td>
+        <td>${array[i].brand}</td>
+        <td>${array[i].price}</td>
+      </tr>`
+    }
+    tableBody.innerHTML = innerHTML
 }
