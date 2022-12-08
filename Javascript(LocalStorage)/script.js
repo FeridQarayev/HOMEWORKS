@@ -4,6 +4,7 @@ const brandInp = document.getElementById('brandInp')
 const priceInp = document.getElementById('priceInp')
 const addBtn = document.getElementById('addBtn')
 const tableBody = document.getElementById('tableBody')
+const wishlistCount = document.getElementById('wishlistCount')
 const cardsBody = document.getElementsByClassName('cards__body')[0]
 const table = document.getElementsByClassName('table')[0]
 
@@ -95,6 +96,8 @@ function AddProductWishList(id){
 function renderWishList(array){
     let innerHTML = ''
     table.style.display = 'block'
+    wishlistCount.style.display = 'block'
+    wishlistCount.textContent = array.length
 
     for (let i = 0; i < array.length; i++) {
         innerHTML+= `<tr>
